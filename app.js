@@ -35,6 +35,7 @@ const algorithmNames = [
   "binary search",
   "DFS Depth first search",
   "BFS breadth first serach",
+  "heapify",
 ];
 
 // view
