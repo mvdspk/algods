@@ -8,12 +8,12 @@ body {
   display: flex;
   justify-content: space-around;
 }
-.data-structure-names,
-.algorithm-names {
+.section {
+  padding: 10px;
   width: 40vw;
   height: 100vh;
   overflow: scroll;
-  border: 1pz grey solid;
+  border: 1px grey solid;
   border-radius: 5px;
 }
 
@@ -21,10 +21,9 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-
 }
 
 .section-header * {
   padding: 10px;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
