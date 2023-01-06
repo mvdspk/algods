@@ -69,3 +69,7 @@ function renderAlgorithmNames() {
 
   dsCount.innerHTML = algorithmNames.length;
 }
+
+const notes=[{
+  
+}];
