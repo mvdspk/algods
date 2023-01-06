@@ -1,0 +1,67 @@
+<html>
+
+<head>
+
+<body>
+  <h1> Towers of Hanoi </h1>
+ 
+  <pre>
+
+public class TowersOfHanoi {
+
+	public void move(int countOfDiscs, char source, char destination, char aux) {
+
+		<span style="color:green"><b>// if only one disc, move from src to dest</b></span>
+		if (countOfDiscs == 1) {
+			System.out.println("Move " + countOfDiscs + " from " + source + " to " + destination);
+		}
+
+		// if more than one disc
+
+		else {
+			// move all but one from src to aux
+			// ( here aux becomes dest and dest become aux from previous step)
+			move(countOfDiscs - 1, source, aux, destination);
+
+			// move last disc from src to destination
+
+			System.out.println("Move " + countOfDiscs + " from " + source + " to " + destination);
+
+			// move all the other discs from aux to to destination
+			// here source become aux
+			move(countOfDiscs - 1, aux, destination, source);
+
+		}
+	}
+
+	public static void main(String[] args) {
+		TowersOfHanoi toh = new TowersOfHanoi();
+
+		// toh.move(1, 'a', 'c', 'b');
+
+		toh.move(3, 'a', 'c', 'b');
+
+		/**
+		 * <pre>
+		 * -----------
+		 * output
+		 * ---------
+		 * 
+		 * Move 1 from a to c 
+		 * Move 2 from a to b 
+		 * Move 1 from c to b 
+		 * Move 3 from a to c
+		 * Move 1 from b to a 
+		 * Move 2 from b to c 
+		 * Move 1 from a to c
+		 * </pre>
+  */
+  }
+
+  }
+
+  </pre>
+</body>
+</head>
+
+</html>
